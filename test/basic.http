@@ -1,2 +1,7 @@
 @baseUrl = http://localhost:3000
+
+GET {{baseUrl}}
+
+###
+
 GET {{baseUrl}}/fetch?url=http://somniumspace.io/2881

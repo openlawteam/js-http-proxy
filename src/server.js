@@ -8,6 +8,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send({ status: "OK" });
+});
+
 app.get("/fetch", (req, res) => {
   console.log(`/fetch ${req.query.url}`);
   request(
