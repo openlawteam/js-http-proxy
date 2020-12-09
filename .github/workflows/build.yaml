@@ -29,5 +29,5 @@ jobs:
           repository: ${{ env.DOCKER_REPO }}
           # Automatically tags the built image with the git short SHA prefixed with the branch name, e.g: vX.Y.Z, latest
           tags: ${{ env.GITHUB_REF_SLUG }}, latest
-          # Only push image on git v* tag
-          push: ${{ startsWith(github.ref, 'refs/tags/') }}
+          # Only push image based on master branch
+          push: ${{ startsWith(github.ref, 'refs/heads/master') }}
