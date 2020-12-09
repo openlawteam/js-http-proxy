@@ -1,0 +1,16 @@
+{
+  "name": "js-http-proxy",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "repository": "git@github.com:openlawteam/js-http-proxy.git",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
